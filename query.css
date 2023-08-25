@@ -1,0 +1,22 @@
+@media (max-width:1500px){
+    .mainSection h1 {
+        font-family: Montserrat;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        background: var(--gradient, linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      #aboutSection p {
+        color: #BDEBEA;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+}
