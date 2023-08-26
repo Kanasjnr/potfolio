@@ -1,60 +1,27 @@
-@media (max-width:1500px){
-    .mainSection h1 {
-        font-family: Montserrat;
-        font-size: 30px;
-        font-style: normal;
-        font-weight: 600;
-        line-height: normal;
-        background: var(--gradient, linear-gradient(90deg, #00f5a0 0%, #00d9f5 100%));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
 
-      #aboutSection p {
-        color: #BDEBEA;
-        font-family: Montserrat;
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: normal;
-      }
+.menu-icon {
+  display: none;
+  cursor: pointer;
 }
 
-@media (max-width:835px){
-  .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    list-style-type: none;
-    gap: 3.2rem;
-    color: #bdebea;
-    font-family: Montserrat;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 26px;
-    letter-spacing: 0.96px;
- 
-  }
-
-  .navigationBar{
-    background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in;
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-    position: absolute;
-    backdrop-filter: blur(10px);
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100vh;
-    transform: translateX(100%);
-  }
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
 }
 
+
+@media (max-width: 992px) {
+  .menu-icon {
+      display: block;
+  }
+
+  .menu-links .active  {
+      display: block;
+  }
+
+  .menu-links {
+      display: none;
+  }
+}
