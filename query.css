@@ -25,3 +25,56 @@
       display: none;
   }
 }
+
+
+@media (max-width: 480px){
+  body{
+    width: auto;
+  }
+  h1 {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    background: var(--gradient, linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+
+  h5 {
+    color: #D7E5EC;
+    font-family: Tinos;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  #img {
+    width: 200px;
+    border-radius: 5px;
+  }
+  
+  .project {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+  #myProject{
+    width: 250px;
+    border-radius: 5px;
+  }
+
+  input,
+  textarea,
+  button {
+    width: 300px;
+    padding-inline: 8px;
+    padding-block: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: none;
+  }
+  
+}
