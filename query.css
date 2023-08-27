@@ -1,9 +1,4 @@
 
-.menu-icon {
-  display: none;
-  cursor: pointer;
-}
-
 .bar {
   width: 25px;
   height: 3px;
@@ -13,17 +8,27 @@
 
 
 @media (max-width: 992px) {
-  .menu-icon {
-      display: block;
-  }
-
-  .menu-links .active  {
-      display: block;
-  }
-
-  .menu-links {
-      display: none;
-  }
+ .navigationBar{
+  background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition: all 0.5s ease-in; */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+    position: absolute;
+    backdrop-filter: blur(10px);
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100vh;
+    transform: translateX(100%);
+ }
+ .btn-mobile-nav {
+  display: block;
+  z-index: 9999;
+}
 }
 
 
