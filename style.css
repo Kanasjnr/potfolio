@@ -10,43 +10,56 @@
 
 body {
   background-color: #041f31;
-  width: auto;
+  width: 100vw;
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
   color: #BDEBEA;
+  overflow-x: hidden;
 }
 
 a{
   color: #bdebea;
-}
 
+}
+/* NAVIGATION BAR */
 .navigationBar {
-  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
   background-color: #041f31;
+  padding:0.5rem 2rem;
+
 }
 
-.menu-links{
+
+.menu-list{
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding: 1rem 1.2rem;
+  text-decoration: none;
+  list-style-type: none;
+  color: #1c1c1c;
+  gap: 3.2rem;
+  font-size: 24px;
 }
 
-button {
-  margin: 20px;
-}
 
 .icon-mobile-nav[name="close-outline"] {
   display: none;
+} 
+
+/* BUTTON */
+button {
+  margin: 20px;
 }
+ 
 .custom-btn {
   width: 130px;
   height: 40px;
-  padding: 10px 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
   background: transparent;
@@ -82,7 +95,6 @@ button {
 }
 .btn2:after {
   position: absolute;
-  content: "";
   width: 0;
   height: 100%;
   top: 0;
@@ -107,13 +119,13 @@ button {
 .btn-mobile-nav{
   display: none;
 }
-
+/* MAIN SECTION */
 .mainSection {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 5rem;
-  margin-top: 7.5rem;
+  margin-top: 10rem;
 }
 
 .mainSection > div {
@@ -155,10 +167,12 @@ p {
   font-style: normal;
   line-height: 2; 
 }
-.container {
+/* .container {
   padding: 1.2rem 2.5rem;
   margin: 5rem 0;
-}
+
+} */
+/* ABOUT SECTION */
 .about {
   text-align: center;
   margin-top: 3.4rem;
@@ -168,7 +182,7 @@ p {
   flex-direction: column;
   gap: 1.2rem;
 }
-
+/* ANIMATIONS */
 .squares {
   position: absolute;
   top: 0;
@@ -308,13 +322,18 @@ p {
       border-radius: 50%;
   }
 }
-
+/* PROJECTS */
 .project {
   align-items: center;
   display: flex;
   flex-direction: column;
-}
+  gap: 1rem;
 
+}
+.sharp{
+  display: flex;
+  gap: 1rem;
+}
 .iconSec{
   display: flex;
   flex-direction: column;
@@ -345,6 +364,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 
 }
 
@@ -358,7 +378,7 @@ ion-icon:hover {
   transform: scale(2);
   transition-duration: 500ms;
 }
- 
+ /* CONTACT SECTION */
   .contact {
     display: flex;
     align-items: center;
@@ -379,7 +399,7 @@ ion-icon:hover {
     border-radius: 5px;
     background: none;
   }
-
+/* FOOTER */
   footer{
     display: flex;
     flex-direction: column;
@@ -387,4 +407,29 @@ ion-icon:hover {
     justify-content: center;
     text-align: center;
   }
+
+.card{
+  position: relative;
+ 
+
+}
+.sharp{
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  gap: 2rem;
+
+}
+.clone{
+  display: flex; 
+  gap: 2rem;
+
+}
+
+
+
+
+
+
 

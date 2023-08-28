@@ -1,148 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="query.css">
-</head>
-<body>
-    <header>
-        <nav class="navigationBar">
-            <div class="menu-links" id="menuLinks">
-                <a href="#">Home</a>
-                <a href="#aboutSection">About Me</a>
-                <a href="#project">Projects</a>
-                <button class="custom-btn btn"><a href="https://docs.google.com/document/d/e/2PACX-1vTDz85b5AFqZoYhM0cnkfKD9ERKdLmd0oDxMkMHNekRUSv6g9ejwcDC9IAVOnR_J241wJu4mlf3GjmX/pub">Resume</a></button>  
-              
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="query.css" />
+  </head>
+  <body>
+    
+     <header class="header">
+  
+       <nav class="navigationBar">
+
+         <div>
+    
+            <a href="" class="logo"> 
+                <h1>Kanas</h1>
+               </a>
+         </div>
+        
+            <div class="menu-links">
+              <ul class="menu-list">
+                <li><a href="#">Skills</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Projects</a></li>
+                
+                <ul class="custom-btn " >
+                    <a href="https://docs.google.com/document/d/e/2PACX-1vTDz85b5AFqZoYhM0cnkfKD9ERKdLmd0oDxMkMHNekRUSv6g9ejwcDC9IAVOnR_J241wJu4mlf3GjmX/pub" class="btn " style="padding: 0.5rem;border-radius: 10px; " target="_blank">Resume</a>
+        
+                  </ul>
+/                
+            </ul>
             </div>
-            <div class="btn-mobile-nav">
-                <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-                <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-              </div>
-        </nav>
+
+             
+           
+          </nav>  
     </header>
 
-
+    <!-- MAIN SECTION -->
     <main>
-        <section class="mainSection container">
-            <div>
-                <h1>Jimoh Nasihudeen Adegboyega.</h1>
-                <h5>WEB DEVELOPER.</h5>
-                   <button class="custom-btn btn2">
-                    <a href="">
-                        Contact Me
-                    </a>
-                   </button>
-                </div>
-                   
-            <img src="img/picture.svg" alt="my picture" id="img" class="img">
-        </section>
-       
-       
+      <section class="mainSection container">
+        <div>
+          <h1>Jimoh Nasihudeen Adegboyega.</h1>
+          <h5>WEB DEVELOPER.</h5>
+          <button class="custom-btn btn2" id="contact">
+            <a href="#contact"> Contact Me </a>
+          </button>
+        </div>
 
-        <section class="about container">
-            <h1>About me.</h1>
-            <p>
-                I am Jimoh Nasihudeen Adegboyega, dedicated to crafting digital experiences that thrive on the web.
-                As a fervent software developer, I possess a robust proficiency in architecting inventive and streamlined solutions.
-                With a month of industry experience, I have cultivated expertise in HyperText Markup Language, frameworks, and cutting-edge development methodologies.
-            </p>
-        </section>
-        <div class="area">
+        <img src="img/picture.svg" alt="my picture" id="img" class="img" />
+      </section>
+      <!-- ABOUT ME -->
+      <section class="about container" id="about">
+        <h1>About me.</h1>
+        <p>
+          I am Jimoh Nasihudeen Adegboyega, dedicated to crafting digital
+          experiences that thrive on the web. As a fervent software developer, I
+          possess a robust proficiency in architecting inventive and streamlined
+          solutions. With a month of industry experience, I have cultivated
+          expertise in HyperText Markup Language, frameworks, and cutting-edge
+          development methodologies.
+        </p>
+      </section>
+      <!-- SQUARE ANIMATIONS -->
+      <div class="area">
         <ul class="squares">
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
         </ul>
-    </div>
+      </div>
 
-        <section class="project">
-         <h1>Projects</h1>
-
-            <a href="https://revolut-dlt.netlify.app/">
-                <img src="img/card--project.svg" alt="my Projects" id="myProject">
-            </a>
-        </section>
-        
+      <section class="project" id="project">
+        <h1>Projects</h1>
+        <!-- LINK TO REVOLUT- CLONE PROJECT -->
+        <div class="clone">
+            <div class="card">
+                <img src="/img/revolutclone.png" alt="" srcset="" />
       
-        <section class="container iconSec" >
-            <h1>Skills</h1>
-            <div  class="icons">
-                    
-                <div>
-                  <ion-icon name="logo-html5"></ion-icon>
-                  <P>HTML</P>
-                </div>
-                <div>
-                    <ion-icon name="logo-nodejs"></ion-icon>
-                    <p>Javascript</p>
-                </div>
-                <div>
-                    <ion-icon name="logo-css3"></ion-icon>
-                    <p>CSS</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="connect container">
-            <h1>CONECT WITH ME</h1>
-
-            <div class="social" >
-                <a href="https://twitter.com/NasihudeenJ">
-                    <ion-icon name="logo-twitter"></ion-icon>
-                </a>
-        
-                <a href="https://www.facebook.com/profile.php?id=61550191943508">
-                    <ion-icon name="logo-facebook"></ion-icon>
-                </a>
-
-                <a href="https://github.com/Kanasjnr">
+                <div class="sharp">
+                  <a href="https://revolut-dlt.netlify.app/" target="_blank">
+                    <ion-icon name="link-sharp"></ion-icon>
+                  </a>
+                  <a href="https://github.com/Kanasjnr/Revolut_Clone.git" target="_blank">
                     <ion-icon name="logo-github"></ion-icon>
-                </a>
+                  </a>
+                </div>
+              </div>
+                <div class="card">
+                  <img src="/img/revolutclone.png" alt="" srcset="" />
+                  <div class="sharp">
+                      <a href="https://revolut-dlt.netlify.app/" target="_blank">
+                        <ion-icon name="link-sharp"></ion-icon>
+                      </a>
+                      <a href="https://github.com/Kanasjnr/potfolio" target="_blank">
+                        <ion-icon name="logo-github"></ion-icon>
+                      </a>
+                    </div>
+                </div>
+        </div>
+        
+      </section>
 
-                <a href="https://www.linkedin.com/in/jimoh-adegboyega-356aa2210/">
-                    <ion-icon name="logo-linkedin"></ion-icon>
-                </a>
-            </div>
+      <!-- SKILL ICONS -->
+      <section class="container iconSec">
+        <h1>Skills</h1>
+        <div class="icons">
+          <div>
+            <ion-icon name="logo-html5"></ion-icon>
+            <p>HTML</p>
+          </div>
+          <div>
+            <ion-icon name="logo-nodejs"></ion-icon>
+            <p>Javascript</p>
+          </div>
+          <div>
+            <ion-icon name="logo-css3"></ion-icon>
+            <p>CSS</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="connect container">
+        <h1>CONECT WITH ME</h1>
+        <!-- SOCIAL ICONS -->
 
-        </section>
-    
-        <section>
-            <form class="contact container">
-                <input type="text" name="name" placeholder="Your Name" required>
-                
-                <input type="email" name="email" placeholder="Input Your Email">
-                
-                <textarea name="message" placeholder="Input Your Message" rows="8"  required>
-                </textarea>
-                
-                <button type="submit" class="btn">Submit</button>
-            </form>
-    
-        </section>
+        <div class="social">
+          <a href="https://twitter.com/NasihudeenJ" target="_blank">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
 
+          <a
+            href="https://www.facebook.com/profile.php?id=61550191943508"
+            target="_blank"
+          >
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+
+          <a href="https://github.com/Kanasjnr" target="_blank">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/jimoh-adegboyega-356aa2210/"
+            target="_blank"
+          >
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </div>
+      </section>
+      <!-- CONTACT ME -->
+      <section>
+        <form class="contact container">
+          <input type="text" name="name" placeholder="Your Name" required />
+
+          <input type="email" name="email" placeholder="Input Your Email" />
+
+          <textarea
+            name="message"
+            placeholder="Input Your Message"
+            rows="8"
+            required
+          >
+          </textarea>
+
+          <button type="submit" class="btn">Submit</button>
+        </form>
+      </section>
     </main>
 
     <footer>
-        <p>Copyright &copy; 2023 Jimoh Nasihudeen Adegboyega.<br>
-        All Right Reserved.</p>
+      <p>
+        Copyright &copy; 2023 Jimoh Nasihudeen Adegboyega.<br />
+        All Right Reserved.
+      </p>
     </footer>
 
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
