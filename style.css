@@ -40,6 +40,9 @@ button {
   margin: 20px;
 }
 
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
 .custom-btn {
   width: 130px;
   height: 40px;

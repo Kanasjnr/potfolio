@@ -4,3 +4,4 @@ const navEl = document.querySelector(".navigationBar");
 btnMobileEl.addEventListener("click", function() {
     navEl.classList.toggle("nav-open")
 });
+

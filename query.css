@@ -1,38 +1,30 @@
-@media (max-width: 992px) {
- .navigationBar{
-  background-color: rgba(255, 255, 255, 0.5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* transition: all 0.5s ease-in; */
-    opacity: 0;
-    pointer-events: none;
-    visibility: visible;
-    position: absolute;
-    backdrop-filter: blur(10px);
-    top: 0;
-    left: 0;
-    width: 50%;
-    height: 100vh;
-    transform: translateX(100%);
- }
- .btn-mobile-nav {
+@media (max-width: 768px) {
+.menu-links{
+  display: none;
+}
+.btn-mobile-nav{
   display: block;
-  z-index: 9999;
 }
-
-
-.navigationBar {
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+.icon-mobile-nav {
+  cursor: pointer;
 }
+.menu-links {
+  display: flex; /* Show the menu links when the mobile toggle button is clicked */
+  background-color:   #041f31; /* Background color for the menu on smaller screens */
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+ height:50% ;
+ width: 50%;
+ flex-direction: column;
+ transition: all 0.5s ease-in;
+ opacity: 0;
+ pointer-events: none;
+ visibility: hidden;
+ position: absolute;
+ backdrop-filter: blur(10px);
+ transform: translateX(100%);
 
-.nav-open .navigationBar {
-  opacity: 1;
-  pointer-events: auto;
-  visibility: visible;
-  transform: translateX(0);
 }
 
 .nav-open .icon-mobile-nav[name="close-outline"] {
@@ -42,7 +34,6 @@
 .nav-open .icon-mobile-nav[name="menu-outline"] {
   display: none;
 }
-
 }
 
 @media (max-width: 600px) {
