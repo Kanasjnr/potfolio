@@ -428,6 +428,51 @@ ion-icon:hover {
 }
 
 
+.logo b{
+  font: 200 10vh "Vibur";
+  /* color: #fee; */
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #BDEBEA, 0 0 0.5em #0bf4f3, 0 0 0.1em #0bf4f3, 0 10px 3px #0bf4f3;
+}
+.logo b span{
+  animation: blink linear infinite 2s;
+}
+.logo b span:nth-of-type(2){
+  animation: blink linear infinite 3s;
+}
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79%{
+     color: #0bf4f3;
+  }
+  80% {
+    
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
 
 
 
