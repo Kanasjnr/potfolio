@@ -1,4 +1,6 @@
- @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Sofia+Sans:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&family=Lato:wght@300;400;700&family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&family=Sofia+Sans:wght@300;400;500;600;700;800&family=Syne:wght@400;500;600;700&display=swap');
 
 * {
   text-decoration: none;
@@ -20,7 +22,65 @@ body {
 a{
   color: #bdebea;
 
+  .logo b{
+    font: 200 10vh "Vibur";
+    /* color: #fee; */
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #BDEBEA, 0 0 0.5em #0bf4f3, 0 0 0.1em #0bf4f3, 0 10px 3px #0bf4f3;
+  }
+  .logo b span{
+    animation: blink linear infinite 2s;
+  }
+  .logo b span:nth-of-type(2){
+    animation: blink linear infinite 3s;
+  }
+  @keyframes blink {
+    78% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    79%{
+       color: #0bf4f3;
+    }
+    80% {
+      
+      text-shadow: none;
+    }
+    81% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    82% {
+      color: #333;
+      text-shadow: none;
+    }
+    83% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+    92% {
+      color: #333;
+      text-shadow: none;
+    }
+    92.5% {
+      color: inherit;
+      text-shadow: inherit;
+    }
+  }
+  
+  
+  .btn-mobile-nav {
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .icon-mobile-nav {
+    width: 4.8rem;
+    height: 4.8rem;
+    color: #000000;
+  }
 }
+
 /* NAVIGATION BAR */
 .navigationBar {
   display: flex;
@@ -426,54 +486,6 @@ ion-icon:hover {
   gap: 2rem;
 
 }
-
-
-.logo b{
-  font: 200 10vh "Vibur";
-  /* color: #fee; */
-  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #BDEBEA, 0 0 0.5em #0bf4f3, 0 0 0.1em #0bf4f3, 0 10px 3px #0bf4f3;
-}
-.logo b span{
-  animation: blink linear infinite 2s;
-}
-.logo b span:nth-of-type(2){
-  animation: blink linear infinite 3s;
-}
-@keyframes blink {
-  78% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  79%{
-     color: #0bf4f3;
-  }
-  80% {
-    
-    text-shadow: none;
-  }
-  81% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  82% {
-    color: #333;
-    text-shadow: none;
-  }
-  83% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-  92% {
-    color: #333;
-    text-shadow: none;
-  }
-  92.5% {
-    color: inherit;
-    text-shadow: inherit;
-  }
-}
-
-
 
 
 
